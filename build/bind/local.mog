@@ -1,0 +1,11 @@
+
+<transform dir file hardlink path=opt/ISCbind/share -> drop>
+
+group groupname=named gid=53
+user username=named uid=53 group=named gcos-field="BIND DNS Server" \
+    home-dir=/data/named
+
+link path=usr/bin/rndc target=../../opt/ISCbind/sbin/rndc
+
+license COPYRIGHT license="ISC/MPLv2"
+
